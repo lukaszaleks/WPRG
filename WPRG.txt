@@ -1,0 +1,91 @@
+
+
+//ZADANIE1
+<?php
+$owocki = array("jablko", "banan", "ananas", "pomarancza", "guawa");
+foreach ($owocki as $owoce) {
+    $long = strlen($owoce);
+    $cowo = '';
+    for ($i = $long - 1; $i >= 0; $i--) {
+        $cowo .= $owoce[$i];
+    }
+
+    $poczP = ($owoce[0] == 'p' || $owoce[0] == 'P') ? "Tak" : "Nie";
+    echo $cowo . " Jest 'p' : " . $poczP . "<br>";
+}
+?>
+
+
+//ZADANIE2
+<?php
+function isPrime($cyfra) {
+    if ($cyfra <= 1) {
+        return false;
+    }
+    for ($i = 2; $i <= sqrt($cyfra); $i++) {
+        if ($cyfra % $i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+echo "Cyfry pierwsze z zakresu od 1 do 27:<br>";
+for ($i = 1; $i <= 27; $i++) {
+    if (isPrime($i)) {
+        echo $i . "<br>";
+    }
+}
+?>
+
+
+//ZADANIE3
+<?php
+function fibonacci($n) {
+    $fibo = array();
+    $fibo[0] = 0;
+    $fibo[1] = 1;
+    for ($i = 2; $i < $n; $i++) {
+        $fibo[$i] = $fibo[$i - 1] + $fibo[$i - 2];
+    }
+    return $fibo;
+}
+
+$N = 27; // N-ta liczba Fibonacciego
+$fibonacio = fibonacci($N);
+
+echo "Nieparzyste elementy ciągu Fibonacciego od 1 do 27:<br>";
+foreach ($fibonacio as $numer => $cyfra) {
+    if ($cyfra % 2 !== 0) {
+        echo ($numer + 1) . ": $cyfra<br>";
+    }
+}
+?>
+
+//ZADANIE4
+<?php
+$text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+
+$words = explode(" ", $text);
+
+for ($i = 0; $i < count($words); $i++) {
+    $word = $words[$i];
+    $lastCharIndex = strlen($word) - 1;
+    if (in_array($word[$lastCharIndex], ['.', ',', '!', '?', ':', ';'])) {
+        unset($words[$i]);
+    }
+}
+
+$words = array_values($words);
+
+$associativeArray = array();
+for ($i = 1; $i < count($words); $i += 2) {
+    $key = $words[$i - 1];
+    $value = $words[$i];
+    $associativeArray[$key] = $value;
+}
+
+foreach ($associativeArray as $key => $value) {
+    echo "$key => $value<br>";
+}
+?>
