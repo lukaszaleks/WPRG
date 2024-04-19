@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator</title>
+</head>
+<body>
+    <h1>Kalkulator</h1>
+    <form method="post" action="calculate.php">
+        <label for="cyfra1">Liczba 1:</label>
+        <input type="number" name="cyfra1" required><br><br>
+
+        <label for="cyfra2">Liczba 2:</label>
+        <input type="number" name="cyfra2" required><br><br>
+
+        <label for="silnik">Działanie:</label>
+        <select name="silnik">
+            <option value="plusowanie">Dodawanie</option>
+            <option value="minusowanie">Odejmowanie</option>
+            <option value="kropokowanie">Mnożenie</option>
+            <option value="dwukropkowanie">Dzielenie</option>
+        </select><br><br>
+
+        <input type="submit" name="submit" value="Oblicz">
+    </form>
+</body>
+</html>
