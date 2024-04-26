@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Obsluga katalogow</title>
+</head>
+<body>
+    <h2>Formularz obslugi katalogow</h2>
+    <form method="post" action="katalogi.php">
+        <label for="sciezka">Sciezka:</label>
+        <input type="text" name="sciezka" required><br><br>
+        <label for="nazwa_katalogu">Nazwa katalogu:</label>
+        <input type="text" name="nazwa_katalogu" required><br><br>
+        <label for="operacja">Operacja:</label>
+        <select name="operacja">
+            <option value="read">Odczytanie zawartosci</option>
+            <option value="delete">Usuniecie katalogu</option>
+            <option value="create">Stworzenie katalogu</option>
+        </select><br><br>
+        <input type="submit" name="submit" value="Wykonaj">
+    </form>
+</body>
+</html>
