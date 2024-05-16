@@ -1,0 +1,5 @@
+https://www.google.com/;Google
+https://stackoverflow.com/;Stack Overflow
+https://www.github.com/;GitHub
+https://www.w3schools.com/;W3Schools
+https://www.php.net/;PHP Manual
