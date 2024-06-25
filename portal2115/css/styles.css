@@ -1,0 +1,103 @@
+ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ddcbee;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 70px;
+}
+
+header {
+    background-color: #455c99;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+main {
+    padding: 1em;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 1em;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 0.5em;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+a {
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}

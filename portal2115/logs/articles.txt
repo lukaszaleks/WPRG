@@ -1,0 +1,18 @@
+Tytuł: do pliku danych
+Treść: testowe przekazywanie danych do pliku
+Autor ID: 2
+Kategoria ID: 1
+Obraz: 
+
+Tytul: testwk99
+Tresc: asfafasfsaf
+Autor ID: 2
+Kategoria ID: 3
+Obraz: pobrane.webp
+
+Tytul: zaliczenie
+Tresc: zaliczone
+Autor ID: 2
+Kategoria ID: 3
+Obraz: 
+
